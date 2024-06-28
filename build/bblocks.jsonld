@@ -103,10 +103,10 @@
       }
     }
   ],
-  "name": "Building Blocks - My OGC Building Blocks repository",
-  "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
-  "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2024-06-28T00:43:52.706833",
+  "name": "Building Blocks - Building Blocks for Metadata",
+  "abstract": "Defines a set of Building Blocks for various options for metadata records using OGC standards.   \nThese may be combined with application semantics to define specific metadata profiles for application domains. \n",
+  "description": "Most \"systems of systems\" will have \nmultiple metadata formats in play due to evolution, backwards compatibility requirements and specific metadata needs of different communities and systems.\n\nThese Building Blocks provide for common approach to defining, discovering, transforming and validating different metadata models.\n",
+  "modified": "2024-06-28T02:08:38.358847",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"0bb25359789ca0cf11558e230e8c5f39bdf8933d",
@@ -120,138 +120,73 @@
   "viewerURL": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/",
   "validationReport": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/tests/report.html",
   "imports": [
-    "https://opengeospatial.github.io/bblocks/register.json"
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://ogcincubator.github.io/geodcat-ogcapi-records/build/register.json",
+    "https://ogcincubator.github.io/bblocks-stac/build/register.json",
+    "https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json"
   ],
   "@type": [
     "skos:ConceptScheme",
     "dcat:Catalog"
   ],
-  "skos:prefLabel": "Building Blocks - My OGC Building Blocks repository",
+  "skos:prefLabel": "Building Blocks - Building Blocks for Metadata",
   "hasConcepts": [
     {
-      "itemIdentifier": "ogc.bbr.template.mySchema",
-      "$schema": "metaschema.yaml",
-      "name": "My Schema",
-      "abstract": "An example schema defining the set of properties of any type of object.",
+      "itemIdentifier": "ogc.model.metadata.geodcat",
+      "name": "GeoDCAT profile",
+      "abstract": "Provides a CI/CT/CD environment for the GeoDCAT definition.",
       "status": "under-development",
-      "dateTimeAddition": "2023-04-05T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-register",
+      "dateTimeAddition": "2023-09-18T00:00:00Z",
+      "itemClass": "model",
+      "register": "ogc-incubator",
       "version": "0.1",
       "dateOfLastChange": "2024-06-28",
       "link": "https://github.com/opengeospatial/bblock-template",
-      "sources": [
-        {
-          "title": "Sample source document",
-          "link": "https://example.com/sources/1"
-        }
-      ],
-      "maturity": "mature",
-      "scope": "unstable",
-      "tags": [
-        "templates"
-      ],
-      "shaclRules": {
-        "ogc.bbr.template.mySchema": [
-          "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/_sources/mySchema/rules.shacl"
-        ]
-      },
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/annotated/bbr/template/mySchema/context.jsonld",
-      "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/annotated/bbr/template/mySchema/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/annotated/bbr/template/mySchema/schema.json"
-      },
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/_sources/mySchema/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/_sources/mySchema/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/_sources/mySchema/",
-      "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-metadata/blob/master/build/tests/bbr/template/mySchema/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/markdown/bbr/template/mySchema/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/json-full/bbr/template/mySchema/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/slate-build/bbr/template/mySchema/"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/bblock/ogc.bbr.template.mySchema"
-        }
-      },
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ]
-    },
-    {
-      "itemIdentifier": "ogc.bbr.template.myFeature",
-      "name": "Custom Feature",
-      "abstract": "This examples shows a simple customisation for OGC API Feature schemas",
-      "status": "under-development",
-      "dateTimeAddition": "2023-05-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "dateOfLastChange": "2024-06-28",
-      "sources": [
-        {
-          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
-          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
-        }
-      ],
-      "maturity": "development",
-      "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.bbr.template.mySchema"
+        "ogc.geo.geodcat.dcat"
       ],
+      "sources": [
+        {
+          "title": "GeoDCAT Specification",
+          "link": "http://www.opengis.net/def/metamodel/profiles/geodcat"
+        },
+        {
+          "title": "GeoDCAT Specification Repository",
+          "link": "https://github.com/opengeospatial/GeoDCAT-SWG"
+        },
+        {
+          "title": "DCAT-AP JSON-LD context",
+          "link": "https://semiceu.github.io/DCAT-AP/releases/3.0.0/context/dcat-ap.jsonld"
+        }
+      ],
+      "scope": "dev",
       "tags": [
-        "feature",
-        "examples"
+        "DCAT",
+        "profile"
       ],
-      "group": "Examples",
-      "highlighted": true,
-      "shaclRules": {
-        "ogc.bbr.template.mySchema": [
-          "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/_sources/mySchema/rules.shacl"
-        ]
-      },
-      "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/annotated/bbr/template/myFeature/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/annotated/bbr/template/myFeature/schema.json"
-      },
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/_sources/myFeature/schema.yaml",
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/annotated/bbr/template/myFeature/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/_sources/myFeature/",
+      "shaclRules": {},
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/_sources/geodcat/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/ogcincubator/bblocks-metadata/blob/master/build/tests/bbr/template/myFeature/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/markdown/bbr/template/myFeature/index.md"
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/markdown/model/metadata/geodcat/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/json-full/bbr/template/myFeature/index.json"
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/json-full/model/metadata/geodcat/index.json"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/slate-build/bbr/template/myFeature/"
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/slate-build/model/metadata/geodcat/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/bblock/ogc.bbr.template.myFeature"
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/bblock/ogc.model.metadata.geodcat"
         }
       },
       "@type": [
-        "bblocks:Schema",
+        "bblocks:Model",
         "skos:Concept",
         "dcat:Dataset"
       ]
