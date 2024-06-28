@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master"
+      "@base": "https://ogcincubator.github.io/bblocks-metadata"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -106,7 +106,7 @@
   "name": "Building Blocks - Building Blocks for Metadata",
   "abstract": "Defines a set of Building Blocks for various options for metadata records using OGC standards.   \nThese may be combined with application semantics to define specific metadata profiles for application domains. \n",
   "description": "Most \"systems of systems\" will have \nmultiple metadata formats in play due to evolution, backwards compatibility requirements and specific metadata needs of different communities and systems.\n\nThese Building Blocks provide for common approach to defining, discovering, transforming and validating different metadata models.\n",
-  "modified": "2024-06-28T02:08:38.358847",
+  "modified": "2024-06-28T02:09:38.392825",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"0bb25359789ca0cf11558e230e8c5f39bdf8933d",
@@ -116,9 +116,9 @@
   },
   "gitRepository": "https://github.com/ogcincubator/bblocks-metadata",
   "gitHubRepository": "https://github.com/ogcincubator/bblocks-metadata/blob/master/",
-  "baseURL": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/",
-  "viewerURL": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/",
-  "validationReport": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/tests/report.html",
+  "baseURL": "https://ogcincubator.github.io/bblocks-metadata/",
+  "viewerURL": "https://ogcincubator.github.io/bblocks-metadata/",
+  "validationReport": "https://ogcincubator.github.io/bblocks-metadata/build/tests/report.html",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json",
     "https://ogcincubator.github.io/geodcat-ogcapi-records/build/register.json",
@@ -140,7 +140,7 @@
       "itemClass": "model",
       "register": "ogc-incubator",
       "version": "0.1",
-      "dateOfLastChange": "2024-06-28",
+      "dateOfLastChange": "2023-09-18",
       "link": "https://github.com/opengeospatial/bblock-template",
       "dependsOn": [
         "ogc.geo.geodcat.dcat"
@@ -165,24 +165,24 @@
         "profile"
       ],
       "shaclRules": {},
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/_sources/geodcat/",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-metadata/_sources/geodcat/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/markdown/model/metadata/geodcat/index.md"
+          "url": "https://ogcincubator.github.io/bblocks-metadata/build/generateddocs/markdown/model/metadata/geodcat/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/json-full/model/metadata/geodcat/index.json"
+          "url": "https://ogcincubator.github.io/bblocks-metadata/build/generateddocs/json-full/model/metadata/geodcat/index.json"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/slate-build/model/metadata/geodcat/"
+          "url": "https://ogcincubator.github.io/bblocks-metadata/build/generateddocs/slate-build/model/metadata/geodcat/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/bblock/ogc.model.metadata.geodcat"
+          "url": "https://ogcincubator.github.io/bblocks-metadata/bblock/ogc.model.metadata.geodcat"
         }
       },
       "@type": [

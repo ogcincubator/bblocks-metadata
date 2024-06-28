@@ -7,29 +7,29 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/ogc.model.metadata.geodcat> a skos:Concept,
+<https://ogcincubator.github.io/ogc.model.metadata.geodcat> a skos:Concept,
         dcat:Dataset,
         bblocks:Model ;
     rdfs:label "GeoDCAT profile" ;
     dct:abstract "Provides a CI/CT/CD environment for the GeoDCAT definition." ;
     dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/json-full/model/metadata/geodcat/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/markdown/model/metadata/geodcat/index.md" ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-metadata/build/generateddocs/markdown/model/metadata/geodcat/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-metadata/build/generateddocs/json-full/model/metadata/geodcat/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/bblock/ogc.model.metadata.geodcat" ],
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-metadata/bblock/ogc.model.metadata.geodcat" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/generateddocs/slate-build/model/metadata/geodcat/" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/bblocks-metadata/build/generateddocs/slate-build/model/metadata/geodcat/" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-06-28"^^xsd:date ;
+    dct:modified "2023-09-18"^^xsd:date ;
     dct:source <http://www.opengis.net/def/metamodel/profiles/geodcat>,
         <https://github.com/opengeospatial/GeoDCAT-SWG>,
         <https://semiceu.github.io/DCAT-AP/releases/3.0.0/context/dcat-ap.jsonld> ;
-    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-metadata/> ;
     dcat:keyword "DCAT",
         "profile" ;
-    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/ogc.geo.geodcat.dcat> ;
+    bblocks:dependsOn <https://ogcincubator.github.io/ogc.geo.geodcat.dcat> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
@@ -37,7 +37,7 @@
 
 <https://github.com/opengeospatial/GeoDCAT-SWG> rdfs:label "GeoDCAT Specification Repository" .
 
-<https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/> a skos:ConceptScheme,
+<https://ogcincubator.github.io/bblocks-metadata/> a skos:ConceptScheme,
         dcat:Catalog ;
     rdfs:label "Building Blocks - Building Blocks for Metadata" ;
     dct:abstract """Defines a set of Building Blocks for various options for metadata records using OGC standards.   
@@ -49,7 +49,7 @@ multiple metadata formats in play due to evolution, backwards compatibility requ
 These Building Blocks provide for common approach to defining, discovering, transforming and validating different metadata models.
 """ ;
     skos:prefLabel "Building Blocks - Building Blocks for Metadata" ;
-    bblocks:hasValidationReport <https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/tests/report.html> ;
+    bblocks:hasValidationReport <https://ogcincubator.github.io/bblocks-metadata/build/tests/report.html> ;
     bblocks:imports <https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json>,
         <https://ogcincubator.github.io/bblocks-stac/build/register.json>,
         <https://ogcincubator.github.io/geodcat-ogcapi-records/build/register.json>,
@@ -58,15 +58,15 @@ These Building Blocks provide for common approach to defining, discovering, tran
 <https://semiceu.github.io/DCAT-AP/releases/3.0.0/context/dcat-ap.jsonld> rdfs:label "DCAT-AP JSON-LD context" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-06-28T02:08:39.378361"^^xsd:dateTime ;
-    prov:startedAtTime "2024-06-28T02:08:39.317380"^^xsd:dateTime ;
+    prov:endedAtTime "2024-06-28T02:09:39.314882"^^xsd:dateTime ;
+    prov:startedAtTime "2024-06-28T02:09:39.256372"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:149065af50bfec83bfbba82a5257b26a212648e8" ;
-            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/build/register.json> ],
-        [ a prov:Entity ;
             dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+        [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:8bc544cccf544ef25f50d7224b86bf3d9e52c54b" ;
+            rdfs:seeAlso <https://ogcincubator.github.io/bblocks-metadata/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;

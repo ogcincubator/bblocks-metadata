@@ -9,7 +9,7 @@
   "itemClass": "model",
   "register": "ogc-incubator",
   "version": "0.1",
-  "dateOfLastChange": "2024-06-28",
+  "dateOfLastChange": "2023-09-18",
   "link": "https://github.com/opengeospatial/bblock-template",
   "dependsOn": [
     "ogc.geo.geodcat.dcat"
@@ -34,7 +34,7 @@
     "profile"
   ],
   "shaclRules": {},
-  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-metadata/master/_sources/geodcat/",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-metadata/_sources/geodcat/",
   "validationPassed": true,
   "description": "## GeoDCAT \n\nThis building block provides a testing framework for the GeoDCAT standard.\n\nUsing this building block allows inheritance of any constraints and tests defined for GeoDCAT.\n\nMainly this will be used to test examples against the GeoDCAT spec and any translations between GeoDCAT and other standards such as ISO19139, STAC etc.\n\n",
   "examples": [

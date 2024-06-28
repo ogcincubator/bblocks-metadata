@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.model.metadata.geodcat - GeoDCAT profile",
   "bblockName": "GeoDCAT profile",
   "bblockId": "ogc.model.metadata.geodcat",
-  "generated": "2024-06-28T02:08:39.304802+00:00",
+  "generated": "2024-06-28T02:09:39.244650+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},
